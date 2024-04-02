@@ -1,0 +1,3 @@
+https:// {
+	reverse_proxy https://git.codecrafters.io
+}
