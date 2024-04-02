@@ -1,3 +1,5 @@
 https:// {
-	reverse_proxy https://git.codecrafters.io
+	reverse_proxy https://git.codecrafters.io {
+		header_up Host {upstream_hostport}
+	}
 }
