@@ -1,7 +1,5 @@
-https:// {
-	reverse_proxy 192.241.134.100 {
-		transport http {
-			tls_insecure_skip_verify
-		}
+http:// {
+	reverse_proxy https://git.codecrafters.io {
+		header_up Host {upstream_hostport}
 	}
 }
